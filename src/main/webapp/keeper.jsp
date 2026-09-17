@@ -39,7 +39,7 @@
             <p>
               <%= note.getNote() %>
             </p>
-            <div class="icon"> <a href="NotesServlet?action=delete&noteid=<%= note.getNoteId()%>">   <i class="fa-solid fa-trash fa-lg"></i></a> </div>
+            <div class="icon"> <a  href="NotesServlet?action=delete&noteid=<%= note.getNoteId()%>" onclick="return confirm('Are you sure you want to delete this note?');" >   <i class="fa-solid fa-trash fa-lg"></i></a> </div>
           </div>
           <%  }%>
         </div>
