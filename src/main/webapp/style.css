@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+
+/* Import Plus Jakarta Sans from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+/* Apply font globally to all elements */
+* {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+nav{
+    padding: 30px;
+    background-color: navy;
+    color: white;
+}
+
+main{
+    min-height: 100vh;
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    
+    gap: 50px;
+}
+
+.note-only-box{
+    padding: 20px;
+}
+
+.note-only-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.note-box{
+    width: 30%;
+    min-height: 30vh;
+    background-color:white;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.note-box form{
+    display: flex;
+    align-items: start;
+    
+    flex-direction: column;
+}
+
+.note-box input,textarea{
+    font-size: 20px;
+    width: 100%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.note-box textarea{
+    resize: none;
+    overflow: hidden;
+}
+
+.note-box .btn-div{
+    width: 100%;
+    min-height: 5vh;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+   
+}
+.note-box button{
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: navy;
+    color: white;
+    
+}
+
+.notes {
+    width: 100%;
+    padding: 20px ;
+}
+
+.note-cards {
+	width:100%;
+	display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+	
+    
+}
+
+.note-card{
+
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.note-card h2{
+    margin-bottom: 10px;
+}
+
+.note-card .icon{
+    width: 100%;
+    height: 2vh;
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   margin: 5px 0px;
+}
+
+@media (max-width:320px) {
+
+    .note-only-box{
+        padding: 30px;
+    }
+
+    .note-box{
+        width: 100%;
+    }
+
+    .note-cards{
+        padding: 20px;
+    }
+
+    .note-card{
+        width: 100%;
+    }
+}
